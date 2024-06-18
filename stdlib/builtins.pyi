@@ -39,6 +39,7 @@ from typing import (  # noqa: Y022
     Any,
     BinaryIO,
     ClassVar,
+    Collection,
     Generic,
     Mapping,
     MutableMapping,
@@ -430,7 +431,7 @@ class _FormatMapMapping(Protocol):
 class _TranslateTable(Protocol):
     def __getitem__(self, key: int, /) -> str | int | None: ...
 
-class str(Sequence[str]):
+class str(Collection[str]):
     @overload
     def __new__(cls, object: object = ...) -> Self: ...
     @overload
