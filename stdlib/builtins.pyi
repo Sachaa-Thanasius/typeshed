@@ -39,7 +39,6 @@ from typing import (  # noqa: Y022
     Any,
     BinaryIO,
     ClassVar,
-    Collection,
     Generic,
     Mapping,
     MutableMapping,
